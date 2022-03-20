@@ -5,13 +5,13 @@ public class TestaListaDuplamenteEncadiada {
 		ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
 
 	    System.out.println(lista);
-	    lista.adicionaNoComeco("arroz");
+	    lista.adicionaNoComeco("Grazi");
 	    System.out.println(lista);
-	    lista.adicionaPorUltimo("salame");
+	    lista.adicionaPorUltimo("Aline");
 	    System.out.println(lista);
-	    lista.adicionaPorUltimo("suco");
+	    lista.adicionaPorUltimo("Ana");
 	    System.out.println(lista);
-	    lista.adicionaNoComeco("mostarda");
+	    lista.adicionaNoComeco("Elisa");
 	    System.out.println(lista);
 	}
 }
