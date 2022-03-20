@@ -6,10 +6,8 @@ public class Cell {
 	private Cell anterior;
 	private Cell proximo;
 
-	public Cell (Object elemento, Cell anterior, Cell prox) {
+	public Cell (Object elemento) {
 		this.elemento = elemento;
-		this.anterior = anterior;
-		this.proximo = prox;
 	}
 	
 	public Object getElemento() {

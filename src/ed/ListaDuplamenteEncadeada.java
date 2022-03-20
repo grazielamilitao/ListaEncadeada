@@ -15,13 +15,13 @@ public class ListaDuplamenteEncadeada {
 
     public void adicionaNoComeco(Object elemento) {
     	if(totalDeElementos==0) {
-    		Cell nova = new Cell(elemento, primeira, primeira);
+    		Cell nova = new Cell(elemento);
         	this.primeira = nova;
         	this.primeira.setProximo(nova);
         	this.primeira.setAnterior(nova);
     	}
     	else {
-    		Cell nova = new Cell(elemento, primeira.getAnterior(), primeira);
+    		Cell nova = new Cell(elemento);
     		Cell ant = primeira.getAnterior();
     		Cell prox = primeira;
     		
@@ -37,7 +37,7 @@ public class ListaDuplamenteEncadeada {
         if(this.totalDeElementos == 0) {
             adicionaNoComeco(elemento);
         } else {
-            Cell nova = new Cell(elemento, primeira.getAnterior(), primeira);
+            Cell nova = new Cell(elemento);
             Cell ultimo = primeira.getAnterior();
             
             ultimo.setProximo(nova);
@@ -50,11 +50,6 @@ public class ListaDuplamenteEncadeada {
     
     @Override
     public String toString () {
-
-        if(this.totalDeElementos == 0) {
-            return "[]";
-        }
-
         Cell atual = primeira;
 
         StringBuilder builder = new StringBuilder("[");
